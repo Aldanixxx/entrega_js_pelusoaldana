@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sassy+Frass&display=swap');
+
+:root {
+    --clr-main: #f52de8;
+    --clr-blanco: #ececec;
+    --clr-gris: #e2e2e2;
+    --clr-rosa: #8719e7;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Sassy Frass', cursive;*/
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Sassy Frass', cursive;
+    font-size: 6vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor__main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--clr-main);
+}
+
+aside {
+    padding: 2rem;
+    color: var(--clr-blanco);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
