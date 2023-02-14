@@ -19,76 +19,34 @@
             <nav>
                 <ul class="navbar">
                     <li>
-                        <button class="boton__menu boton__seccion active"><i class="bi bi-stars"></i> Nuevos productos</button>
+                        <button id="nuevos_productos" class="boton__menu boton__seccion active"><i class="bi bi-stars"></i> Nuevos productos</button>
                     </li>
                     <li>
-                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Geles</button>
+                        <button id="geles" class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Geles</button>
                     </li>
                     <li>
-                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Esmaltes</button>
+                        <button id="esmaltes" class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Esmaltes</button>
                     </li>
                     <li>
-                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Acrilicos y Polygel</button>
+                        <button id="acripoly" class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Acrilicos y Polygel</button>
                     </li>
                     <li>
-                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Herramientas</button>
+                        <button id="herramientas" class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Herramientas</button>
                     </li>
 
                     <li>
-                        <a class="boton__menu boton__carrito" href="./HTML/carrito.html"><i class="bi bi-cart-fill"></i>
-                            Carrito</a><div class="numero__items"> 0</div>
+                        <a class="boton__menu boton__carrito" href="./HTML/carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="unidades" class="unidades">0</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
             <footer class="footer__aside"> Aldana Peluso 2023 <i class="bi bi-r-circle"></i></footer>
         </aside>
         <main>
-            <h2 class="titulo__principal">Nuevos productos</h2>
-            <div class="contenedor__productos">
-                <div class="producto">
-                    <img class="producto__imagen" src="./img/img1.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="./img/img2.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div><div class="producto">
-                    <img class="producto__imagen" src="./img/img3.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div><div class="producto">
-                    <img class="producto__imagen" src="./img/img4.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div><div class="producto">
-                    <img class="producto__imagen" src="./img/img5.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div><div class="producto">
-                    <img class="producto__imagen" src="./img/img6.jpg" alt="">
-                    <div class="producto__propiedades">
-                        <h3 class="producto__titulo">Esmalte Morgan Taylor "Moscow Winter"</h3>
-                        <p class="producto__precio">$1500</p>
-                        <button class="producto__agregar">Agregar</button>
-                    </div>
-                </div>
+            <h2  id="titulo-seccion" class="titulo__principal">Nuevos productos</h2>
+            <div id="contenedor-productos" class="contenedor__productos">
+                <!--jsproyecto-->
             </div>
         </main>
 

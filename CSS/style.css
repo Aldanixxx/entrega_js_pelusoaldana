@@ -67,7 +67,7 @@ aside {
     gap: .5rem;
 }
 
-.boton__seccion, .boton__carrito, .numero__item {
+.boton__menu, .boton__carrito, .numero__item {
     background-color: transparent;
     border: 0;
     color: var(--clr-blanco);
@@ -89,7 +89,7 @@ aside {
     height: 1.25rem;
     border-radius: .25rem;
     line-height: .5;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -102,12 +102,12 @@ aside {
     position: relative;
 }
 
-.boton__menu.active .numero__items {
+.boton__seccion.active .numero__items {
     background-color: var(--clr-gris);
     color: var(--clr-white);
 }
 
-.boton__menu.active::before {
+.boton__seccion.active::before {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -119,7 +119,7 @@ aside {
     box-shadow: 0 1rem 0 var(--clr-blanco);
 }
 
-.boton__menu.active::after {
+.boton__seccion.active::after {
     content: '';
     position: absolute;
     top: 100%;
