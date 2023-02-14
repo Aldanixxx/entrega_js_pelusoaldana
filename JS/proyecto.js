@@ -117,6 +117,7 @@ const unidades = document.querySelector("#unidades");
 
 function cargarProductos(productosElegidos) {
 
+    console.log(contenedorProductos);
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
@@ -176,28 +177,39 @@ function actualizarBotonesAgregar() {
     });
 }
 
-const ProductosEnCarrito = [];
+
+let productosEnCarrito;
+
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+if (productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarUnidades();
+} else {
+    productosEnCarrito = [];
+}
+
 
 function agregarAlCarrito(e) {
 
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    if (ProductosEnCarrito.some(producto => producto.id === idBoton)) {
-        const index = ProductosEnCarrito.findIndex(producto => producto.id === idBoton);
-        ProductosEnCarrito[index].cantidad++;
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
 
     } else {
         productoAgregado.cantidad = 1;
-        ProductosEnCarrito.push(productoAgregado);
+        productosEnCarrito.push(productoAgregado);
     }
 
    
     actualizarUnidades();
-    localStorage.setItem("unidades".JSON.stringify(ProductosEnCarrito));
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 function actualizarUnidades() {
-    let nuevoUnidades = ProductosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    let nuevoUnidades = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     unidades.innerText = nuevoUnidades;
 }
