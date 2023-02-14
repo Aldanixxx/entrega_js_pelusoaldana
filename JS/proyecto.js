@@ -194,8 +194,8 @@ function agregarAlCarrito(e) {
 
    
     actualizarUnidades();
-    //localStorage.setItem("unidades".JSON.stringify(ProductosEnCarrito));
-};
+    localStorage.setItem("unidades".JSON.stringify(ProductosEnCarrito));
+}
 
 function actualizarUnidades() {
     let nuevoUnidades = ProductosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
