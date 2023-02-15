@@ -12,7 +12,7 @@ const productos = [
         precio: 1000
     },
     {
-        id: "gel_1",
+        id: "gel_2",
         titulo: "Gel polish 2",
         imagen: "./img/img8.jpg",
         categoria: {
@@ -22,7 +22,7 @@ const productos = [
         precio: 1000
     },
     {
-        id: "gel_1",
+        id: "gel_3",
         titulo: "Gel polish 3",
         imagen: "./img/img9.jpg",
         categoria: {
@@ -32,7 +32,7 @@ const productos = [
         precio: 1000
     },
     {
-        id: "gel_1",
+        id: "gel_4",
         titulo: "Gel polish 4",
         imagen: "./img/img10.jpg",
         categoria: {
@@ -109,6 +109,9 @@ const productos = [
     },
 ];
 
+// cargarProductos(productos);
+
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesSeccion = document.querySelectorAll(".boton__seccion");
 const tituloSeccion = document.querySelector("#titulo-seccion");
@@ -117,7 +120,6 @@ const unidades = document.querySelector("#unidades");
 
 function cargarProductos(productosElegidos) {
 
-    console.log(contenedorProductos);
     contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
@@ -142,7 +144,6 @@ function cargarProductos(productosElegidos) {
 }
 
 
-//cargarProductos(productos);
 
 botonesSeccion.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -155,9 +156,6 @@ botonesSeccion.forEach(boton => {
 
             const productoSeccion = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloSeccion.innerText = productoSeccion.categoria.nombre;
-
-
-
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
 
