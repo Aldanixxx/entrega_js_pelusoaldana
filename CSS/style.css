@@ -199,14 +199,10 @@ main {
     gap: 2rem;
 }
 
-.carrito__productos {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 
-.carrito__producto {
-    display: flex;
+
+.carrito__productos {
+    display: grid;
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-gray);
@@ -214,8 +210,9 @@ main {
     padding-right: 2rem;
     border-radius: 1rem;
     color: var(--clr-main);
-    font-size: .5rem;
+   gap: 1rem;
 }
+
 
 .carrito__imagen {
     width: 4rem;
@@ -289,3 +286,4 @@ main {
 .disabled {
     display: none;
 }
+

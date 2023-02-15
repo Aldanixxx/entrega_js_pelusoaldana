@@ -142,7 +142,7 @@ function cargarProductos(productosElegidos) {
 }
 
 
-cargarProductos(productos);
+//cargarProductos(productos);
 
 botonesSeccion.forEach(boton => {
     boton.addEventListener("click", (e) => {

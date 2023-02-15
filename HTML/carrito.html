@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
     <div class="contenedor__main">
 
@@ -19,12 +20,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="boton__menu boton__carrito active" href="../index.html"><i class="bi bi-cart-fill"></i>
+                        <a class="boton__menu boton__carrito active" href="../index.html"><i
+                                class="bi bi-cart-fill"></i>
                             Carrito</a>
                     </li>
                     <li>
                         <a class="boton__menu boton__home" href="../index.html"><i class="bi bi-house-fill"></i>
-                            HOME</a> 
+                            HOME</a>
                     </li>
                     <li>
                         <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Geles</button>
@@ -33,87 +35,53 @@
                         <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Esmaltes</button>
                     </li>
                     <li>
-                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Acrilicos y Polygel</button>
+                        <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Acrilicos y
+                            Polygel</button>
                     </li>
                     <li>
                         <button class="boton__menu boton__seccion"><i class="bi bi-stars"></i> Herramientas</button>
                     </li>
 
                     <li>
-                    
-                    
+
+
                 </ul>
             </nav>
         </aside>
         <main>
             <h2 class="titulo__principal">Carrito</h2>
-            <div  class="contenedor__carrito">
-                <p id="carrito-vacio" class="carrito__vacio">Aun no agregaste nada. <a href="../index.html">Echale un vistazo a nuestros lanzamientos <i class="bi bi-stars"></i></a></p>
-                <div idid="carrito-productos"="carrito__productos" class="carrito__productos">
-                    <div class="carrito__producto">
-                        <img class="carrito__imagen" src="../img/img2.jpg" alt="">
-                        <div class="carrito__producto__titulo">
-                            <h6>Titulo</h6>
-                            <h3>PRODUCTO</h3>
-                            <div class="carrito__producto__cantidad">
-                                <h6>Cantidad</h6>
-                                <p>1</p>
-                            </div>
-                            <div class="carrito__producto__precio">
-                                <h6>Precio</h6>
-                                <p>$1500</p>
-                            </div>
-                            <div class="carrito__producto__subtotal">
-                                <h6>Subtotal</h6>
-                                <p>Subtotal</p>
-                            </div>
-                            <button class="carrito__producto__eliminar"><i class="bi bi-trash3-fill"></i></button>
+            <div class="contenedor__carrito">
+                <p id="carrito-vacio" class="carrito__vacio">Aun no agregaste nada. <a href="../index.html">Echale un
+                        vistazo a nuestros lanzamientos <i class="bi bi-stars"></i></a></p>
+                <div id="carrito-productos" class="carrito__productos disabled">
 
-                        </div>
 
-                    </div>
-                    <div class="carrito__producto">
-                        <img class="carrito__imagen" src="../img/img2.jpg" alt="">
-                        <div class="carrito__producto__titulo">
-                            <h6>Titulo</h6>
-                            <h3>PRODUCTO2</h3>
-                            <div class="carrito__producto__cantidad">
-                                <h6>Cantidad</h6>
-                                <p>2</p>
-                            </div>
-                            <div class="carrito__producto__precio">
-                                <h6>Precio</h6>
-                                <p>$1500</p>
-                            </div>
-                            <div class="carrito__producto__subtotal">
-                                <h6>Subtotal</h6>
-                                <p>Subtotal</p>
-                            </div>
-                            <button class="carrito__producto__eliminar"><i class="bi bi-trash3-fill"></i></button>
-
-                        </div>
-
-                    </div>
                 </div>
+
+            </div>
+            <div id="carrito-acciones" class="carrito-acciones disabled">
                 <div class="carrito__izquierda">
-                    <button class="carrito__vaciar">Vaciar carrito</button>
+                    <button id="carrito-acciones-vaciar" class="carrito__vaciar">Vaciar carrito</button>
                 </div>
                 <div class="carrito__derecha">
                     <div class="carrito__total">
                         <p>Total: </p>
                         <p id="total">$3000</p>
                     </div>
-                    <button class="carrito__comprar">Comprar</button>
+                    <button id="carrito-acciones-comprar" class="carrito__comprar">Comprar</button>
 
                 </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
+                        class="bi bi-emoji-laughing"></i></p>
             </div>
-        </main>
-        </div>
-    </div>
-    
 
-<script src="../JS/carrito.js"></script>
-<script src="../JS/proyecto.js"></script>
+    </div>
+    </main>
+    </div>
+
+
+    <script src="../JS/carrito.js"></script>
+    <script src="../JS/proyecto.js"></script>
 </body>
 
 </html>
