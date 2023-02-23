@@ -287,3 +287,54 @@ main {
     display: none;
 }
 
+
+.carrito-comprado,
+.carrito-formulario {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carrito-comprado {
+  background-color: #f2f2f2;
+}
+
+.carrito-formulario h2 {
+  margin-top: 0;
+}
+
+.carrito-formulario div {
+  margin-bottom: 10px;
+}
+
+.carrito-formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.carrito-formulario input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--clr-gris);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.carrito-formulario button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--clr-main);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
