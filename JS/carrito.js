@@ -128,7 +128,7 @@ function FinalizarCompra() {
 
     let div = document.createElement("div");
     div.innerHTML = `
-        <p>${document.getElementById("nombre").value}! Gracias por tu compra.</p>
+        <p>${document.getElementById("nombre").value}: Gracias por tu compra!</p>
     `;
     document.querySelector("#carrito-comprado").append(div);
     contenedorCarritoFormulario.classList.add("disabled");
